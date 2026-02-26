@@ -15,3 +15,9 @@ Un script que consulta la API de `evilinsult.com` para obtener un insulto aleato
 ### 🚀 Uso / Usage:
 ```bash
 python3 fetch_insult.py
+
+## 🔫 Revolver Roulette
+Un juego de azar con lógica de turnos y arte ASCII. Demuestra el manejo de bucles y la librería `random`.
+
+## 🌦️ Weather API
+Script que consume la API de Open-Meteo para obtener el clima actual en Jerez. Ejemplo de manejo de peticiones `HTTP` y `JSON`.
