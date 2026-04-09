@@ -65,11 +65,11 @@ def ruleta_rusa():
             print(f"{jugadores_lista[turno]} se apunta a sí mismo...")
             input("Presiona ENTER para apretar el gatillo...")
             if tambor[0]:
-                print(f"💥 {jugadores_lista[turno]} ha sido eliminado! 💀")
+                print(f" {jugadores_lista[turno]} ha sido eliminado! 💀")
                 del jugadores_lista[turno]
                 break
             else:
-                print("🎉 Sobreviviste esta vez! Vuelve a intentarlo.")
+                print(" Sobreviviste esta vez! Vuelve a intentarlo.")
                 if jugadores_lista[turno] == dealer:
                     dealer_ultimo_turno = "1"
         else:
@@ -77,11 +77,11 @@ def ruleta_rusa():
             print(f"{jugadores_lista[turno]} apunta a {jugadores_lista[oponente]}...")
             input("Presiona ENTER para apretar el gatillo...")
             if tambor[0]:
-                print(f"💥 {jugadores_lista[oponente]} ha sido eliminado! 💀")
+                print(f" {jugadores_lista[oponente]} ha sido eliminado! 💀")
                 del jugadores_lista[oponente]
                 break
             else:
-                print(f"🎉 {jugadores_lista[oponente]} ha sobrevivido! Ahora es su turno.")
+                print(f" {jugadores_lista[oponente]} ha sobrevivido! Ahora es su turno.")
                 turno = oponente
                 if jugadores_lista[turno] == dealer:
                     dealer_ultimo_turno = "2"
@@ -89,7 +89,7 @@ def ruleta_rusa():
         tambor.append(tambor.pop(0))
         time.sleep(2)
     
-    print(f"\n{jugadores_lista[0]} es el ganador! 🎉")
+    print(f"\n{jugadores_lista[0]} es el ganador! ")
 
 if __name__ == "__main__":
     ruleta_rusa()
