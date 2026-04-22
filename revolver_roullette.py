@@ -65,7 +65,7 @@ def ruleta_rusa():
             print(f"{jugadores_lista[turno]} se apunta a sí mismo...")
             input("Presiona ENTER para apretar el gatillo...")
             if tambor[0]:
-                print(f" {jugadores_lista[turno]} ha sido eliminado! 💀")
+                print(f" {jugadores_lista[turno]} ha sido eliminado!")
                 del jugadores_lista[turno]
                 break
             else:
@@ -77,7 +77,7 @@ def ruleta_rusa():
             print(f"{jugadores_lista[turno]} apunta a {jugadores_lista[oponente]}...")
             input("Presiona ENTER para apretar el gatillo...")
             if tambor[0]:
-                print(f" {jugadores_lista[oponente]} ha sido eliminado! 💀")
+                print(f" {jugadores_lista[oponente]} ha sido eliminado!")
                 del jugadores_lista[oponente]
                 break
             else:
